@@ -1,3 +1,4 @@
-fn solution() -> Option<return_type> {
+fn main() {
+    println!("Hello World");
 }
 
