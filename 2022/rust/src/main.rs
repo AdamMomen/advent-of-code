@@ -1,11 +1,11 @@
-mod day1;
+mod day2;
 use std::env;
-use crate::day1::Solution;
+use crate::day2::Solution;
 use std::io::Result;
 
 fn main() -> Result<()> {
     env::set_var("RUST_BACKTRACE", "1");
-    let result = Solution.solve().unwrap();
+    let result = Solution::new().solve().unwrap();
 
     println!("Solution is: {:?}", result);
     Ok(())
