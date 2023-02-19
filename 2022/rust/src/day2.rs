@@ -166,7 +166,7 @@ impl Solution {
     }
 
 
-    pub fn solve(&self) -> Result<u32> {
+    pub fn solve(&self) -> u32 {
         let mut result: Vec<u32> = Vec::new();
         let mut file_path = PathBuf::new();
         file_path.push("/Users/adam/personal/advent_of_code/2022/input/day2.txt");
@@ -175,6 +175,6 @@ impl Solution {
             result.push(self.evaluate_round(line))
         }
 
-        Ok(result.into_iter().sum())
+        result.into_iter().sum()
     }
 }

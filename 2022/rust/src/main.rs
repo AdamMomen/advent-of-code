@@ -5,7 +5,7 @@ use std::io::Result;
 
 fn main() -> Result<()> {
     env::set_var("RUST_BACKTRACE", "1");
-    let result = Solution::new().solve().unwrap();
+    let result = Solution::new().solve();
 
     println!("Solution is: {:?}", result);
     Ok(())
